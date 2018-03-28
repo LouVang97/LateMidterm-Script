@@ -40,4 +40,4 @@ systemctl status dev-mqueue.mount
 sleep 3
 journalctl _SYSTEMD_UNIT=dev-mqueue.mount
 sleep 3
-echo "check on current job"; echo ""; systemctl list-jobs; sleep 2; echo "";
+echo "check on current jobs"; echo ""; systemctl list-jobs; sleep 2; echo "";
