@@ -12,6 +12,8 @@ echo "define the difference between file1.txt and file2.txt"; echo ""; diff file
 echo "copy file1.txt into file2.txt"; echo ""; cp file1.txt file2.txt; sleep 2; echo "";
 echo "list the contents of directory"; echo ""; ls' sleep 2; echo "";
 
+echo "create a file"; echo ""; touch file; sleep 2; echo "";
+
 # send hello to /dev/null 
 echo hello > /dev/null
 # create a partition and filesystem
