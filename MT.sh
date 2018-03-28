@@ -10,5 +10,5 @@ echo "1 2 3">>file1.txt
 echo "2 3 5">>file2.txt
 echo "define the difference between file1.txt and file2.txt"; echo ""; diff file1.txt file2.txt; sleep 2; echo "";
 echo "copy file1.txt into file2.txt"; echo ""; cp file1.txt file2.txt; sleep 2; echo "";
-echo "list the contents of directory"; echo ""; ls' sleep 2; echo "";
+echo "list the contents of directory"; echo ""; ls; sleep; echo "";
 echo hello > /dev/null
