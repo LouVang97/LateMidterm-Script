@@ -11,9 +11,9 @@ echo "2 3 5">>file2.txt
 echo "define the difference between file1.txt and file2.txt"; echo ""; diff file1.txt file2.txt; sleep 2; echo "";
 echo "copy file1.txt into file2.txt"; echo ""; cp file1.txt file2.txt; sleep 2; echo "";
 echo "list the contents of directory"; echo ""; ls' sleep 2; echo "";
-#Send hello to /dev/null 
+# send hello to /dev/null 
 echo hello > /dev/null
-#Create a partition and filesystem
+# create a partition and filesystem
 dd if=/dev/zero of=./8MB.img bs=2M count=13
 sudo hexdump ./8MB.img | less
 sudo mkfs -t ext2 ./8MB.img
@@ -22,7 +22,7 @@ mount; df -h
 sudo umount /mnt/tmp
 sudo mount /mnt/tmp -remount
 sudo fsck /mnt/tmp
-#Create directories inode contains a list of filenames and then link to other inodes 
+# create directories inode contains a list of filenames and then link to other inodes 
 mkdir dir1 dir2 
 echo a > dir1/file1
 echo b > dir1/file2
@@ -35,7 +35,7 @@ echo "check on kernel system log file and dmesg"; echo ""; less /var/log/kernel.
 echo "Check system's runlevel"; echo ""; who -r; sleep 2; echo"";
 echo "change direcotry"; echo ""; cd /etc/systemd; sleep 2; echo "";
 echo "view all unit's dependencies"; echo ""; systemct1 show -all; sleep 2; echo "";
-#Get dev-mqueue.mount as a status and display recent information from the unit's journal
+# get dev-mqueue.mount as a status and display recent information from the unit's journal
 systemctl status dev-mqueue.mount
 sleep 3
 journalctl _SYSTEMD_UNIT=dev-mqueue.mount
